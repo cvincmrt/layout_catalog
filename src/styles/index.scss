@@ -1,1 +1,59 @@
 @import 'reset';
+@import 'variables';
+@import 'mixins';
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.header{
+  height: 60px;
+  box-shadow: 0 2 4 rgba(0, 0, 0, .1);
+}
+
+.container{
+  @include container;
+  @include flex;
+
+  justify-content: space-between;
+}
+
+.logo{
+  width: $logoWidth;
+  height: $logoHeight;
+}
+
+.nav{
+
+  &__list{
+    @include ul;
+  }
+
+  &__item{
+    margin-left: 20px;
+    position: relative;
+
+    &::after{
+      position: absolute;
+      content: '';
+      height: 4px;
+      width:100%;
+      background-color: #00ACDC;
+      border-radius: 8px;
+      top: 56px;
+      left: 0;
+    }
+
+    &:first-child(){
+      margin-left: 0;
+    }
+  }
+
+  &__link{
+    @include a;
+
+    line-height: 60px;
+  }
+
+}

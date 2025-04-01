@@ -1,0 +1,19 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: Roboto, sans-serif;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container{
+  max-width: $container-lg;
+  margin: 0 auto;
+  padding: 0 50px;
+}

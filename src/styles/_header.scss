@@ -2,12 +2,12 @@
   width: 100%;
   box-shadow: 0 2 4 rgba(0, 0, 0, 0.05);
 
-  .container{
+  .container {
     @include d-flex;
 
     justify-content: space-between;
 
-    .logo{
+    .logo {
       display: inline-block;
       width: $logoWidth;
       height: $logoHeight;
@@ -15,9 +15,8 @@
       cursor: pointer;
     }
 
-    .nav{
-
-      &__list{
+    .nav {
+      &__list {
         @include d-flex;
 
         justify-content: center;
@@ -25,18 +24,20 @@
         gap: 20px;
       }
 
-      &__item{
+      &__item {
         position: relative;
 
-        &:hover a, .is-active{
+        &:hover a,
+        .is-active {
           color: $primary-color;
         }
 
-        &:hover::after, .is-active::after{
+        &:hover::after,
+        .is-active::after {
           position: absolute;
           top: 56px;
           left: 0;
-          content: "";
+          content: '';
           width: 100%;
           height: 4px;
           border-radius: 8px;
@@ -44,7 +45,7 @@
           transition: all 300ms ease;
         }
       }
-      &__link{
+      &__link {
         @include link;
       }
     }

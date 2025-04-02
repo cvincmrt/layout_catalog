@@ -1,4 +1,6 @@
-*, *::before, *::after{
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -11,7 +13,7 @@ $logoHeight: 40px;
 
 // color
 $primary-color: #00acdc;
-$secondary-color: #060B35;
+$secondary-color: #060b35;
 $grey-color: #616070;
 $white-color: #fff;
 $black-color: #000;

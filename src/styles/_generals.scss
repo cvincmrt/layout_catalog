@@ -12,6 +12,15 @@ img {
   height: auto;
 }
 
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 .container {
   max-width: $container-lg;
   margin: 0 auto;

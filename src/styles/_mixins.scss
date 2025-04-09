@@ -14,3 +14,11 @@
   color: $secondary-color;
   cursor: pointer;
 }
+
+@mixin font($size: 16, $weight: 400, $line-heigh: 1rem, $color: $black-color) {
+  font-family: Roboto, sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-heigh;
+  color: $color;
+}

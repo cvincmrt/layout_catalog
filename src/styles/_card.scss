@@ -5,16 +5,21 @@
   background-color: $white-color;
   width: $card-width;
   border-radius: 5px;
-  padding: 33px 16px 16px;
+  padding: 32px 16px 16px;
 
   &__img {
     width: $card-img-width;
     height: $card-img-height;
     margin: 0 auto 40px;
+
+    img {
+      width: $card-img-width;
+      height: $card-img-height;
+    }
   }
 
   &__title {
-    @include font(12px, 500, 18px);
+    @include font(12px, 500, 18px, #060b35);
 
     margin-bottom: 4px;
   }
@@ -61,7 +66,9 @@
     background-color: $primary-color;
     border: 1px solid $primary-color;
     text-transform: uppercase;
-    padding: 12px 70px;
+    text-align: center;
+    padding-top: 11px;
+    padding-bottom: 11px;
 
     &:hover,
     &--hover {
@@ -82,7 +89,7 @@
     }
 
     & > span {
-      @include font(16px, 700, 18px, $black-color);
+      @include font(16px, 700, 18px, #060b35);
 
       display: block;
     }

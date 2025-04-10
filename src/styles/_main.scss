@@ -1,7 +1,7 @@
-.main{
+.main {
   display: grid;
-  grid-template-columns: repeat(4, 200px);
-  justify-items: center;
- 
+  grid-template-columns: repeat(4, minmax(auto, 200px));
+  justify-content: center;
   gap: 46px 48px;
+  margin: 50px 0;
 }

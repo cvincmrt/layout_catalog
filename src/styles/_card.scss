@@ -6,9 +6,11 @@
   padding: 32px 16px 16px;
   transition: all 300ms ease;
 
-  &:hover{
+  /*
+  &:hover {
     transform: scale(110%);
   }
+*/
 
   &__img {
     width: $card-img-width;

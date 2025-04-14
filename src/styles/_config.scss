@@ -31,3 +31,11 @@ $card-img-height: 134px;
 // star
 $star-width: 16px;
 $star-height: 16px;
+
+// breakpoints
+$breakpoints: (
+  "xs" : 0,
+  "ms" : 488px,
+  "md" : 768px,
+  "lg" : 1024px,
+);
